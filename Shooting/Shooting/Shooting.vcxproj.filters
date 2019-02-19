@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib">
+      <UniqueIdentifier>{f325f1fa-6f5b-4a41-88f7-c5a64e4e9ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\Window">
+      <UniqueIdentifier>{d6009f62-1e15-4ace-9b55-99fb879715ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\SceneManager">
+      <UniqueIdentifier>{9e345d43-ca53-40af-9cbc-fa9ac97fe4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\DirectX">
+      <UniqueIdentifier>{61586930-031b-44ad-a288-e54e92ceeb68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\2DHelper">
+      <UniqueIdentifier>{1e01f44f-6da1-4cae-ae5b-183dbe23c23f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\SceneManager\SceneBase">
+      <UniqueIdentifier>{667d7740-8bf8-4e55-927c-a333aeddc06c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\ObjectManager">
+      <UniqueIdentifier>{3eaa79df-dbae-4346-a7f7-d7fc6ddd4f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\Texture">
+      <UniqueIdentifier>{c2245c8b-7acb-4c46-83a8-70afdcef348e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\Font">
+      <UniqueIdentifier>{262ff7c8-0fd1-4ed7-8920-b7a840b8b6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\Sprite">
+      <UniqueIdentifier>{1034342b-9fae-4fa0-abc4-55a1ea7be602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\Input">
+      <UniqueIdentifier>{4f93018f-12b3-4343-bbee-42a60fc5e8e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\DXInput">
+      <UniqueIdentifier>{d9bc4bf3-0f1b-4238-898b-293a06c71912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\DXInput\InputBase">
+      <UniqueIdentifier>{727a2860-ce5e-4f7b-b94c-9d35b2eeab38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\DXInput\InputBase\Mouse">
+      <UniqueIdentifier>{f52574e8-85b0-43de-a814-f5c90738ff68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\GameLib\DXInput\InputBase\Keyboard">
+      <UniqueIdentifier>{d5d3adac-fc11-4a80-9fd4-c518ccd46906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Main">
+      <UniqueIdentifier>{27b878e4-1e55-494a-a8a8-2fafc87eaa06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene">
+      <UniqueIdentifier>{5aca89e3-b30c-47c7-afec-51f07dd2a778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene\TitleScene">
+      <UniqueIdentifier>{c3576038-a097-4bf0-8941-c18969cef565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene\TitleScene\Object">
+      <UniqueIdentifier>{5249c35e-93e4-449d-a0ec-63f3005dbc32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GameLib\GameLib.cpp">
+      <Filter>リソース ファイル\GameLib</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\Window\Window.cpp">
+      <Filter>リソース ファイル\GameLib\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\DirectX\DirectX.cpp">
+      <Filter>リソース ファイル\GameLib\DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\2DHelper\2DHelper.cpp">
+      <Filter>リソース ファイル\GameLib\2DHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\SceneManager\SceneManager.cpp">
+      <Filter>リソース ファイル\GameLib\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\SceneManager\SceneBase\SceneBase.cpp">
+      <Filter>リソース ファイル\GameLib\SceneManager\SceneBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\ObjectManager\ObjectManager.cpp">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\ObjectManager\Object.cpp">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\ObjectManager\Object2DBase.cpp">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\Texture\Texture.cpp">
+      <Filter>リソース ファイル\GameLib\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\Font\Font.cpp">
+      <Filter>リソース ファイル\GameLib\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\Sprite\Sprite.cpp">
+      <Filter>リソース ファイル\GameLib\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\Input\Input.cpp">
+      <Filter>リソース ファイル\GameLib\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\DXInput\DXInput.cpp">
+      <Filter>リソース ファイル\GameLib\DXInput</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\DXInput\InputBase\InputBase.cpp">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\DXInput\InputBase\Keyboard\Keyboard.cpp">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLib\DXInput\InputBase\Mouse\Mouse.cpp">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Main.cpp">
+      <Filter>リソース ファイル\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene\TitleScene.cpp">
+      <Filter>リソース ファイル\Scene\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene\Object\TitleBackground.cpp">
+      <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameLib\GameLib.h">
+      <Filter>リソース ファイル\GameLib</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\Window\Window.h">
+      <Filter>リソース ファイル\GameLib\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DirectX\DirectX.h">
+      <Filter>リソース ファイル\GameLib\DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\2DHelper\2DHelper.h">
+      <Filter>リソース ファイル\GameLib\2DHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\SceneManager\SceneManager.h">
+      <Filter>リソース ファイル\GameLib\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\SceneManager\SceneBase\SceneBase.h">
+      <Filter>リソース ファイル\GameLib\SceneManager\SceneBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\ObjectManager\ObjectManager.h">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\ObjectManager\Object.h">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\ObjectManager\Object2DBase.h">
+      <Filter>リソース ファイル\GameLib\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\Texture\Texture.h">
+      <Filter>リソース ファイル\GameLib\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\Font\Font.h">
+      <Filter>リソース ファイル\GameLib\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\Sprite\Sprite.h">
+      <Filter>リソース ファイル\GameLib\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\Input\Input.h">
+      <Filter>リソース ファイル\GameLib\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DXInput\DXInput.h">
+      <Filter>リソース ファイル\GameLib\DXInput</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DXInput\InputBase\InputBase.h">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DXInput\InputBase\Keyboard\Keyboard.h">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DXInput\InputBase\Mouse\Mouse.h">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLib\DXInput\InputBase\Mouse\DIM.h">
+      <Filter>リソース ファイル\GameLib\DXInput\InputBase\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\TitleScene.h">
+      <Filter>リソース ファイル\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\Object\TitleBackground.h">
+      <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
