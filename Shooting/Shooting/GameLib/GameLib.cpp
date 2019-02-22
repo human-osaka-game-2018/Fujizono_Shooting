@@ -47,18 +47,18 @@ bool GameLib::Initialize(const wchar_t* pName, int width, int height, bool isFul
 }
 
 // DirectXLibの解放
-void GameLib::Finalize()
+void GameLib::Release()
 {
 	// フォントの解放
-	m_font.Finalize();
+	m_font.Release();
 	// 入力システムの解放
-	m_input.Finalize();
+	m_input.Release();
 	//オブジェクトマネージャの解放
-	m_objectManager.Finalize();
+	m_objectManager.Release();
 	// シーンシステムの解放
-	m_sceneManager.Finalize();
+	m_sceneManager.Release();
 	// DirectXの解放
-	m_directX.Finalize();
+	m_directX.Release();
 }
 
 // メインループ

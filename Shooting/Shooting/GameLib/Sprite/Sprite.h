@@ -27,7 +27,7 @@ public:
 	/**
 	* @brief スプライトの解放
 	*/
-	void Finalize();
+	void Release();
 
 
 	/**

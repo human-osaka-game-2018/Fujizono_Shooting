@@ -22,7 +22,7 @@ public:
 	/**
 	* @brief 解放を行う関数
 	*/
-	virtual void Finalize();
+	virtual void Release();
 
 	/**
 	* @brief 操作の更新を行う関数

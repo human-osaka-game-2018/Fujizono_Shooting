@@ -15,7 +15,7 @@ public:
 	/**‰Šú‰»ŠÖ”*/
 	virtual bool Initialize() = 0;
 	/**‰ğ•úŠÖ”*/
-	virtual void Finalize() = 0;
+	virtual void Release() = 0;
 	/**‘€ìŠÖ”*/
 	virtual void Update() = 0;
 	/**•`‰æŠÖ”*/

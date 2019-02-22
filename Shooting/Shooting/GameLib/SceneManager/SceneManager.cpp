@@ -7,7 +7,7 @@ SceneManager::SceneManager()
 
 SceneManager::~SceneManager()
 {
-	Finalize();
+	Release();
 }
 
 /**シーン管理の初期化*/
@@ -17,10 +17,10 @@ void SceneManager::Initialize()
 }
 
 /**シーン管理の解放*/
-void SceneManager::Finalize()
+void SceneManager::Release()
 {
 	// 最後は解放して終わる
-	if (m_pScene) { m_pScene->Finalize(); }
+	if (m_pScene) { m_pScene->Release(); }
 	SAFE_DELETE(m_pScene);
 }
 
@@ -43,7 +43,7 @@ bool SceneManager::ChangeScene(SceneBase* pScene)
 	// 現在のシーンを解放する
 	if (m_pScene)
 	{
-		m_pScene->Finalize();
+		m_pScene->Release();
 		SAFE_DELETE(m_pScene);
 	}
 

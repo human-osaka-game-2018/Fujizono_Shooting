@@ -14,7 +14,7 @@ bool Object2DBase::Initialize()
 	return true;
 }
 
-void Object2DBase::Finalize()
+void Object2DBase::Release()
 {
 }
 

@@ -44,7 +44,7 @@ public:
 	/**
 	* @brief DirectXの終了処理を行う関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief 描画シーンの開始を宣言する関数

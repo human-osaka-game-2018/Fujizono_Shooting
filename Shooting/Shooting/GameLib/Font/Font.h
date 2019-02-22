@@ -25,7 +25,7 @@ public:
 	/**
 	* @briefフォントを破棄する関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief フォントの高さを取得する関数

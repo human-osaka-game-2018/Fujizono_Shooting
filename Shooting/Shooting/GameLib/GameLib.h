@@ -43,7 +43,7 @@ public:
 	/**
 	* @brief DirectXLibの解放を行う関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief ゲームのメインループ処理を行う関数
