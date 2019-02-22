@@ -9,7 +9,7 @@ Font::Font()
 
 Font::~Font()
 {
-	Finalize();
+	Release();
 }
 
 // フォントの生成
@@ -41,7 +41,7 @@ bool Font::Initialize(int size)
 }
 
 // フォントの破棄
-void Font::Finalize()
+void Font::Release()
 {
 	SAFE_RELEASE(m_pFont);
 	m_fontSize = 0;

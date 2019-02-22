@@ -15,7 +15,7 @@ void ObjectManager::Initialize()
 }
 
 //‰ð•ú‚·‚é
-void ObjectManager::Finalize()
+void ObjectManager::Release()
 {
 	ReleaseObject();
 }

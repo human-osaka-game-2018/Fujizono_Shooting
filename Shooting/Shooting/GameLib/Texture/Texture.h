@@ -27,7 +27,7 @@ public:
 	/**
 	* @brief テクスチャーの解放を行う関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief 横幅の取得を行う関数

@@ -14,7 +14,7 @@ bool Object::Initialize()
 	return true;
 }
 
-void Object::Finalize()
+void Object::Release()
 {
 }
 

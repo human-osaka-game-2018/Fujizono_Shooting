@@ -8,7 +8,7 @@ DirectX::DirectX()
 
 DirectX::~DirectX()
 {
-	Finalize();
+	Release();
 }
 
 
@@ -58,7 +58,7 @@ bool DirectX::Initialize(HWND hWnd, int width, int height, bool isFullscreen)
 }
 
 // DirectXÇÃèIóπèàóù
-void DirectX::Finalize()
+void DirectX::Release()
 {
 	SAFE_RELEASE(m_pDevice);
 	SAFE_RELEASE(m_pD3D);

@@ -6,7 +6,7 @@ Input::Input()
 }
 Input::~Input()
 {
-	Finalize();
+	Release();
 }
 
 // 入力システムの初期化
@@ -21,7 +21,7 @@ void Input::Initialize()
 }
 
 // 入力システムの解放
-void Input::Finalize()
+void Input::Release()
 {
 	//解放は必要ないが、キー入力情報を０で初期化している
 	Initialize();

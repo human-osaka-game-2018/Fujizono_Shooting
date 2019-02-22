@@ -12,7 +12,7 @@ Sprite::Sprite(void)
 
 Sprite::~Sprite(void)
 {
-	Finalize();
+	Release();
 }
 
 // スプライトの生成
@@ -41,9 +41,9 @@ bool Sprite::Create(const char* pTexturePath)
 }
 
 // スプライトの解放
-void Sprite::Finalize(void)
+void Sprite::Release(void)
 {
-	m_texture.Finalize();
+	m_texture.Release();
 }
 
 // スプライトの座標設定

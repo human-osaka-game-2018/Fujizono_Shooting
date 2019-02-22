@@ -14,7 +14,7 @@ public:
 	/**初期化を行う関数*/
 	void Initialize(void);
 	/**解放を行う関数*/
-	void Finalize(void);
+	void Release(void);
 	/**操作の更新を行う関数*/
 	void Update(void);
 	/**描画を行う関数*/

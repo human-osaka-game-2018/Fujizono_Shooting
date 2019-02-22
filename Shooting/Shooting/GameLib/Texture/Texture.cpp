@@ -112,7 +112,7 @@ Texture::Texture(void)
 
 Texture::~Texture(void)
 {
-	Finalize();
+	Release();
 }
 
 // テクスチャーの読み込み
@@ -168,7 +168,7 @@ bool Texture::CreateFromMemory(const void* pData, UINT size)
 }
 
 // テクスチャーの解放
-void Texture::Finalize(void)
+void Texture::Release(void)
 {
 	if (m_pTexture != nullptr)
 	{

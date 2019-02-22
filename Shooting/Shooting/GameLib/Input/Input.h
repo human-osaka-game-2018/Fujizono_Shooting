@@ -38,7 +38,7 @@ public:
 	/**
 	* @brief 入力システムの解放を行う関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief 入力状況の更新を行う関数

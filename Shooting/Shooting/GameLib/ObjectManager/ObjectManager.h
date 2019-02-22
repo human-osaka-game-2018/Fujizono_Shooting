@@ -21,7 +21,7 @@ public:
 	/**
 	* @brief インスタンスを破棄する関数
 	*/
-	void Finalize();
+	void Release();
 
 	/**
 	* @brief オブジェクトを登録する関数
