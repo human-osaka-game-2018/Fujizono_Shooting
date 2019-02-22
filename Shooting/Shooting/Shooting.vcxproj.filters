@@ -62,6 +62,15 @@
     <Filter Include="リソース ファイル\Scene\TitleScene\Object">
       <UniqueIdentifier>{5249c35e-93e4-449d-a0ec-63f3005dbc32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="リソース ファイル\Scene\GameScene">
+      <UniqueIdentifier>{19d0238c-2afc-4946-a849-fb107490ffdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene\GameScene\Object">
+      <UniqueIdentifier>{3bd2a01f-bd89-45e5-91bc-3d6896cc458d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="リソース ファイル\Scene\GameScene\SharedInformation">
+      <UniqueIdentifier>{fbf5495a-ae04-44f9-b04c-af819ebe33ca}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameLib\GameLib.cpp">
@@ -124,6 +133,24 @@
     <ClCompile Include="Scene\TitleScene\Object\TitleBackground.cpp">
       <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\TitleScene\Object\PressEnter.cpp">
+      <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\GameScene.cpp">
+      <Filter>リソース ファイル\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\Player.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\GameBackground.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\Missile.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\SharedInformation\SharedInformation.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\SharedInformation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameLib\GameLib.h">
@@ -185,6 +212,24 @@
     </ClInclude>
     <ClInclude Include="Scene\TitleScene\Object\TitleBackground.h">
       <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene\Object\PressEnter.h">
+      <Filter>リソース ファイル\Scene\TitleScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\GameScene.h">
+      <Filter>リソース ファイル\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\Player.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\GameBackground.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\Missile.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\SharedInformation\SharedInformation.h">
+      <Filter>リソース ファイル\Scene\GameScene\SharedInformation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

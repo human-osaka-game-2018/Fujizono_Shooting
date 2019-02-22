@@ -140,6 +140,7 @@
     <ClCompile Include="GameLib\Texture\Texture.cpp" />
     <ClCompile Include="GameLib\Window\Window.cpp" />
     <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Scene\TitleScene\Object\PressEnter.cpp" />
     <ClCompile Include="Scene\TitleScene\Object\TitleBackground.cpp" />
     <ClCompile Include="Scene\TitleScene\TitleScene.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@
     <ClInclude Include="GameLib\Sprite\Sprite.h" />
     <ClInclude Include="GameLib\Texture\Texture.h" />
     <ClInclude Include="GameLib\Window\Window.h" />
+    <ClInclude Include="Scene\TitleScene\Object\PressEnter.h" />
     <ClInclude Include="Scene\TitleScene\Object\TitleBackground.h" />
     <ClInclude Include="Scene\TitleScene\TitleScene.h" />
   </ItemGroup>
