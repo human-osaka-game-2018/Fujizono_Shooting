@@ -40,12 +40,12 @@ public:
 	void Render();
 
 private:
-	int m_FontSize = 50;
+	const int m_FontSize = 50;
 	DWORD m_Color = static_cast<DWORD>(0xffffffff);
 	int m_frameCount = 0;     //!< フレームを数えるための変数
-	int m_ChangeColorTime = 60;
+	const int m_ChangeColorTime = 60;
 	const char* m_PressEnter = "PRESS ENTER";
-	int m_Text_x = 185;
-	int m_Text_y = 400;
+	const int m_Text_x = 185;
+	const int m_Text_y = 400;
 };
 

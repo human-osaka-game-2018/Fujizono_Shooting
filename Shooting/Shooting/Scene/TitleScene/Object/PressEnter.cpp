@@ -32,10 +32,15 @@ void PressEnter::Update()
 {
 	//フレーム経過で色情報を変える
 	m_frameCount++;
+
 	if (m_frameCount > m_ChangeColorTime)
 	{
+
 		//カラーが一定値達したら、フレームカウントを0に戻す
-		(m_Color <= static_cast<DWORD>(0x02ffffff)) ? m_frameCount = 0 : m_frameCount;
+		if (m_Color <= static_cast<DWORD>(0x02ffffff))
+		{
+			m_frameCount = 0;
+		}
 
 		m_Color -= static_cast<DWORD>(0x03000000);
 	}
