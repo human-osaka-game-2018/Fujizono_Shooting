@@ -1,9 +1,9 @@
 ﻿#pragma once
 
-#include "../../../GameLib/ObjectManager/Object2DBase.h"
-#include "../../../GameLib/DirectX/DirectX.h"
-#include "../../../GameLib/2DHelper/2DHelper.h"
-#include "../../../GameLib/Texture/Texture.h"
+#include "GameLib/ObjectManager/Object2DBase.h"
+#include "GameLib/DirectX/DirectX.h"
+#include "GameLib/2DHelper/2DHelper.h"
+#include "GameLib/Texture/Texture.h"
 
 
 /**
@@ -36,8 +36,5 @@ public:
 	* @brief 描画関数
 	*/
 	void Render();
-
-private:
-	const char* m_TexturePath = "../Graphics/Title_BG.jpg";
 };
 

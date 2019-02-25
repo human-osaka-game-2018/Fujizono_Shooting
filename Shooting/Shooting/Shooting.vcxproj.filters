@@ -139,17 +139,20 @@
     <ClCompile Include="Scene\GameScene\GameScene.cpp">
       <Filter>リソース ファイル\Scene\GameScene</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\GameScene\Object\Player.cpp">
-      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
-    </ClCompile>
     <ClCompile Include="Scene\GameScene\Object\GameBackground.cpp">
-      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\GameScene\Object\Missile.cpp">
       <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
     </ClCompile>
     <ClCompile Include="Scene\GameScene\SharedInformation\SharedInformation.cpp">
       <Filter>リソース ファイル\Scene\GameScene\SharedInformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\Enemy.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\Player.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameScene\Object\Missile.cpp">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -219,17 +222,20 @@
     <ClInclude Include="Scene\GameScene\GameScene.h">
       <Filter>リソース ファイル\Scene\GameScene</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\GameScene\Object\Player.h">
-      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\GameScene\Object\GameBackground.h">
-      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\GameScene\Object\Missile.h">
       <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
     </ClInclude>
     <ClInclude Include="Scene\GameScene\SharedInformation\SharedInformation.h">
       <Filter>リソース ファイル\Scene\GameScene\SharedInformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\Enemy.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\Player.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameScene\Object\Missile.h">
+      <Filter>リソース ファイル\Scene\GameScene\Object</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

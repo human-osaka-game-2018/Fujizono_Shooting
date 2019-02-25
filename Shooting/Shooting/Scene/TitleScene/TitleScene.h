@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "../../GameLib/SceneManager/SceneBase/SceneBase.h"
+#include "GameLib/SceneManager/SceneBase/SceneBase.h"
 
 /**
 * @brief タイトルシーンのクラス

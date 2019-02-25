@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)\Include;$(FBXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)\Include;$(ProjectDir);$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(DXSDK_DIR)\Lib\x86;$(FBXSDK_DIR)\lib\vs2015\x86\debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -140,6 +140,12 @@
     <ClCompile Include="GameLib\Texture\Texture.cpp" />
     <ClCompile Include="GameLib\Window\Window.cpp" />
     <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Scene\GameScene\GameScene.cpp" />
+    <ClCompile Include="Scene\GameScene\Object\Enemy.cpp" />
+    <ClCompile Include="Scene\GameScene\Object\GameBackground.cpp" />
+    <ClCompile Include="Scene\GameScene\Object\Missile.cpp" />
+    <ClCompile Include="Scene\GameScene\Object\Player.cpp" />
+    <ClCompile Include="Scene\GameScene\SharedInformation\SharedInformation.cpp" />
     <ClCompile Include="Scene\TitleScene\Object\PressEnter.cpp" />
     <ClCompile Include="Scene\TitleScene\Object\TitleBackground.cpp" />
     <ClCompile Include="Scene\TitleScene\TitleScene.cpp" />
@@ -163,6 +169,12 @@
     <ClInclude Include="GameLib\Sprite\Sprite.h" />
     <ClInclude Include="GameLib\Texture\Texture.h" />
     <ClInclude Include="GameLib\Window\Window.h" />
+    <ClInclude Include="Scene\GameScene\GameScene.h" />
+    <ClInclude Include="Scene\GameScene\Object\Enemy.h" />
+    <ClInclude Include="Scene\GameScene\Object\GameBackground.h" />
+    <ClInclude Include="Scene\GameScene\Object\Missile.h" />
+    <ClInclude Include="Scene\GameScene\Object\Player.h" />
+    <ClInclude Include="Scene\GameScene\SharedInformation\SharedInformation.h" />
     <ClInclude Include="Scene\TitleScene\Object\PressEnter.h" />
     <ClInclude Include="Scene\TitleScene\Object\TitleBackground.h" />
     <ClInclude Include="Scene\TitleScene\TitleScene.h" />
