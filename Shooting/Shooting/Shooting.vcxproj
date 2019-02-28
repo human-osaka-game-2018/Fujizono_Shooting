@@ -141,11 +141,9 @@
     <ClCompile Include="GameLib\Window\Window.cpp" />
     <ClCompile Include="Main\Main.cpp" />
     <ClCompile Include="Scene\GameScene\GameScene.cpp" />
-    <ClCompile Include="Scene\GameScene\Object\Enemy.cpp" />
     <ClCompile Include="Scene\GameScene\Object\GameBackground.cpp" />
-    <ClCompile Include="Scene\GameScene\Object\Missile.cpp" />
-    <ClCompile Include="Scene\GameScene\Object\Player.cpp" />
-    <ClCompile Include="Scene\GameScene\SharedInformation\SharedInformation.cpp" />
+    <ClCompile Include="Scene\GameScene\Player\Object\Missile.cpp" />
+    <ClCompile Include="Scene\GameScene\Player\Player.cpp" />
     <ClCompile Include="Scene\TitleScene\Object\PressEnter.cpp" />
     <ClCompile Include="Scene\TitleScene\Object\TitleBackground.cpp" />
     <ClCompile Include="Scene\TitleScene\TitleScene.cpp" />
@@ -170,11 +168,9 @@
     <ClInclude Include="GameLib\Texture\Texture.h" />
     <ClInclude Include="GameLib\Window\Window.h" />
     <ClInclude Include="Scene\GameScene\GameScene.h" />
-    <ClInclude Include="Scene\GameScene\Object\Enemy.h" />
     <ClInclude Include="Scene\GameScene\Object\GameBackground.h" />
-    <ClInclude Include="Scene\GameScene\Object\Missile.h" />
-    <ClInclude Include="Scene\GameScene\Object\Player.h" />
-    <ClInclude Include="Scene\GameScene\SharedInformation\SharedInformation.h" />
+    <ClInclude Include="Scene\GameScene\Player\Object\Missile.h" />
+    <ClInclude Include="Scene\GameScene\Player\Player.h" />
     <ClInclude Include="Scene\TitleScene\Object\PressEnter.h" />
     <ClInclude Include="Scene\TitleScene\Object\TitleBackground.h" />
     <ClInclude Include="Scene\TitleScene\TitleScene.h" />

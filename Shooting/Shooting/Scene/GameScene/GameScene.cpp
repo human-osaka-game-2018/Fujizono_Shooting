@@ -1,6 +1,6 @@
 #include "GameScene.h"
 #include "Object/GameBackground.h"
-#include "Object/Player.h"
+#include "Player/Player.h"
 
 GameScene::GameScene()
 {
