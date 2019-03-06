@@ -9,9 +9,8 @@ Object::~Object()
 {
 }
 
-bool Object::Initialize()
+void Object::Initialize()
 {
-	return true;
 }
 
 void Object::Release()

@@ -9,9 +9,8 @@ Object2DBase::~Object2DBase()
 {
 }
 
-bool Object2DBase::Initialize()
+void Object2DBase::Initialize()
 {
-	return true;
 }
 
 void Object2DBase::Release()

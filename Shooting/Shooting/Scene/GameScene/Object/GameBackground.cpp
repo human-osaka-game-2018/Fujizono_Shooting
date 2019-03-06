@@ -1,4 +1,4 @@
-#include "GameBackground.h"
+ï»¿#include "GameBackground.h"
 #include "../../../GameLib/GameLib.h"
 
 GameBackground::GameBackground()
@@ -11,8 +11,8 @@ GameBackground::~GameBackground()
 	Release();
 }
 
-//‰Šú‰»‚·‚é
-bool GameBackground::Initialize()
+//åˆæœŸåŒ–ã™ã‚‹
+void GameBackground::Initialize()
 {
 
 	const float TextureTopLeft_x = 128.f;
@@ -21,22 +21,21 @@ bool GameBackground::Initialize()
 	const float TextureHeight = static_cast<float>(WINDOW->GetHeight());
 	const char* TexturePath = "../Graphics/Game_BG.png";
 
-	// ƒeƒNƒXƒ`ƒƒ[ƒTƒCƒY‚©‚ç‰æ‘œƒTƒCƒY‚ÌUV‚ğæ“¾(‰æ‘œ‚ª2‚Ì—İæ‚Å‚ ‚ê‚Î1.0f‚É‚È‚é)
-	// ƒeƒNƒXƒ`ƒƒ‚ª2‚Ì—İæ‚Å‚È‚¢‚Æ‚«‚ÉŒø‰Ê‚ğ”­Šö‚·‚é
+	if (!m_texture.Load(TexturePath))
+	{
+		MessageBox(NULL, TEXT("ç”»åƒã®èª­ã¿è¾¼ã¿ã‚¨ãƒ©ãƒ¼"), TEXT("ã‚¨ãƒ©ãƒ¼"), MB_ICONWARNING);
+	}
+
+
+	// ãƒ†ã‚¯ã‚¹ãƒãƒ£ãƒ¼ã‚µã‚¤ã‚ºã‹ã‚‰ç”»åƒã‚µã‚¤ã‚ºã®UVã‚’å–å¾—(ç”»åƒãŒ2ã®ç´¯ä¹—ã§ã‚ã‚Œã°1.0fã«ãªã‚‹)
+	// ãƒ†ã‚¯ã‚¹ãƒãƒ£ãŒ2ã®ç´¯ä¹—ã§ãªã„ã¨ãã«åŠ¹æœã‚’ç™ºæ®ã™ã‚‹
 	float u = static_cast<float>(m_texture.GetSrcWidth()) / static_cast<float>(m_texture.GetWidth());
 	float v = static_cast<float>(m_texture.GetSrcHeight()) / static_cast<float>(m_texture.GetHeight());
 
-	if (!m_texture.Load(TexturePath))
-	{
-		return false;
-	}
-
 	HELPER_2D->SetVerticesFromLeftTopType(m_vertices, TextureTopLeft_x, TextureTopLeft_y, TextureWidth, TextureHeight, u, v);
-
-	return true;
 }
 
-//‰ğ•ú‚·‚é
+//è§£æ”¾ã™ã‚‹
 void GameBackground::Release()
 {
 	m_texture.Release();
@@ -50,12 +49,12 @@ void GameBackground::Render()
 {
 	IDirect3DDevice9* pDevice = GameLib::Instance.GetDirect3DDevice();
 
-	//’¸“_‚É“ü‚ê‚éƒf[ƒ^‚ğİ’è
+	//é ‚ç‚¹ã«å…¥ã‚Œã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®š
 	pDevice->SetFVF(FVF_SIMPLE_TEX_2D);
 
-	//ƒeƒNƒXƒ`ƒƒ‚Ìİ’è
+	//ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®è¨­å®š
 	pDevice->SetTexture(0, m_texture.GetD3DTexture());
 
-	//•`‰æ
+	//æç”»
 	pDevice->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, m_vertices, sizeof(Simple2DVertex));
 }

@@ -1,4 +1,4 @@
-#include "Player.h"
+ï»¿#include "Player.h"
 #include "GameLib/GameLib.h"
 
 namespace {
@@ -24,24 +24,20 @@ Player::~Player()
 	Release();
 }
 
-//‰Šú‰»‚·‚é
-bool Player::Initialize()
-{
-	m_missile.Initialize();
-	
+//åˆæœŸåŒ–ã™ã‚‹
+void Player::Initialize()
+{	
     const char* TexturePath = "../Graphics/Player.png";
 
 	if (!m_texture.Load(TexturePath))
 	{
-		return false;
+		MessageBox(NULL, TEXT("ç”»åƒã®èª­ã¿è¾¼ã¿ã‚¨ãƒ©ãƒ¼"), TEXT("ã‚¨ãƒ©ãƒ¼"), MB_ICONWARNING);
 	}
 
 	HELPER_2D->SetVerticesFromLeftTopType(m_vertices, TextureTopLeft_x, TextureTopLeft_y, TextureWidth, TextureHeight);
-
-	return true;
 }
 
-//‰ð•ú‚·‚é
+//è§£æ”¾ã™ã‚‹
 void Player::Release()
 {
 	m_texture.Release();
@@ -92,36 +88,32 @@ void Player::Update()
 
 	++m_limitCount;
 
-	m_missileFlag = false;
-
 	if (DIRECT_INPUT->KeyboardIsHeld(DIK_Z))
 	{
 		if (m_limitCount > limitTime)
 		{
 			m_limitCount = 0;
-			m_missileFlag = true;
 
-			m_missile_x = m_vertices->x;
-			m_missile_y = m_vertices->y;
+			m_missile.Create(m_vertices->x, m_vertices->y);
 		}
 	}
 
 	HELPER_2D->SetVerticesFromLeftTopType(m_vertices, m_vertices->x, m_vertices->y, TextureWidth, TextureHeight);
 
-	m_missile.Update(m_missileFlag, m_missile_x, m_missile_y);
+	m_missile.Update();
 }
 
 void Player::Render()
 {
 	IDirect3DDevice9* pDevice = GameLib::Instance.GetDirect3DDevice();
 
-	//’¸“_‚É“ü‚ê‚éƒf[ƒ^‚ðÝ’è
+	//é ‚ç‚¹ã«å…¥ã‚Œã‚‹ãƒ‡ãƒ¼ã‚¿ã‚’è¨­å®š
 	pDevice->SetFVF(FVF_SIMPLE_TEX_2D);
 
-	//ƒeƒNƒXƒ`ƒƒ‚ÌÝ’è
+	//ãƒ†ã‚¯ã‚¹ãƒãƒ£ã®è¨­å®š
 	pDevice->SetTexture(0, m_texture.GetD3DTexture());
 
-	//•`‰æ
+	//æç”»
 	pDevice->DrawPrimitiveUP(D3DPT_TRIANGLEFAN, 2, m_vertices, sizeof(Simple2DVertex));
 
 	m_missile.Render();

@@ -13,7 +13,7 @@ public:
 	/**
 	* @brief ‰Šú‰»‚ğs‚¤ŠÖ”
 	*/
-	virtual bool Initialize();
+	virtual void Initialize();
 
 	/**
 	* @brief ‰ğ•ú‚ğs‚¤ŠÖ”

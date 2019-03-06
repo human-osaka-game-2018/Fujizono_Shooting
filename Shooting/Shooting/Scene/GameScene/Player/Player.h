@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "GameLib/ObjectManager/Object2DBase.h"
 #include "GameLib/DirectX/DirectX.h"
@@ -14,23 +14,22 @@ public:
 	~Player();
 
 	/**
-	* @brief ‰Šú‰»‚·‚éŠÖ”
-	* @return ‰Šú‰»‚ªãè‚­‚Å‚«‚Ä‚¢‚È‚¢‚ÆFALSE
+	* @brief åˆæœŸåŒ–ã™ã‚‹é–¢æ•°
 	*/
-	bool Initialize();
+	void Initialize();
 
 	/**
-	* @brief ‰ğ•ú‚·‚éŠÖ”
+	* @brief è§£æ”¾ã™ã‚‹é–¢æ•°
 	*/
 	void Release();
 
 	/**
-	* @brief ‘€ìŠÖ”
+	* @brief æ“ä½œé–¢æ•°
 	*/
 	void Update();
 
 	/**
-	* @brief •`‰æŠÖ”
+	* @brief æç”»é–¢æ•°
 	*/
 	void Render();
 
@@ -38,10 +37,6 @@ private:
 	
 	Missile m_missile;
 
-	//@’e‚Ì”­Ë‚ğ§ŒÀ‚·‚é‚½‚ß‚ÌƒJƒEƒ“ƒg
+	//ã€€å¼¾ã®ç™ºå°„ã‚’åˆ¶é™ã™ã‚‹ãŸã‚ã®ã‚«ã‚¦ãƒ³ãƒˆ
 	int m_limitCount = 0;
-
-	bool m_missileFlag = false;
-	float m_missile_x = 0;
-	float m_missile_y = 0;
 };
