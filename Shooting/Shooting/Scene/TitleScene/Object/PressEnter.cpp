@@ -14,11 +14,12 @@ PressEnter::~PressEnter()
 }
 
 //初期化する
-bool PressEnter::Initialize()
+void PressEnter::Initialize()
 {
-	DEBUGFONT->Initialize(m_FontSize);
-
-	return true;
+	if (DEBUGFONT->Initialize(m_FontSize) == false)
+	{
+		MessageBox(NULL, TEXT("初期化エラー"), TEXT("エラー"), MB_ICONWARNING);
+	}
 }
 
 //解放する

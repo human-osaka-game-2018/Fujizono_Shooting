@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "GameLib/ObjectManager/Object2DBase.h"
 #include "GameLib/DirectX/DirectX.h"
@@ -7,7 +7,7 @@
 
 
 /**
-* @brief ƒ^ƒCƒgƒ‹‚Ì”wŒiŠÖŒW‚Ìˆ—‚ğ‚Ü‚Æ‚ß‚½ƒNƒ‰ƒX
+* @brief ã‚¿ã‚¤ãƒˆãƒ«ã®èƒŒæ™¯é–¢ä¿‚ã®å‡¦ç†ã‚’ã¾ã¨ã‚ãŸã‚¯ãƒ©ã‚¹
 */
 class GameBackground : public Object2DBase
 {
@@ -17,23 +17,22 @@ public:
 	~GameBackground();
 
 	/**
-	* @brief ‰Šú‰»‚·‚éŠÖ”
-	* @return ‰Šú‰»‚ªãè‚­‚Å‚«‚Ä‚¢‚È‚¢‚ÆFALSE
+	* @brief åˆæœŸåŒ–ã™ã‚‹é–¢æ•°
 	*/
-	bool Initialize();
+	void Initialize();
 
 	/**
-	* @brief ‰ğ•ú‚·‚éŠÖ”
+	* @brief è§£æ”¾ã™ã‚‹é–¢æ•°
 	*/
 	void Release();
 
 	/**
-	* @brief ‘€ìŠÖ”
+	* @brief æ“ä½œé–¢æ•°
 	*/
 	void Update();
 
 	/**
-	* @brief •`‰æŠÖ”
+	* @brief æç”»é–¢æ•°
 	*/
 	void Render();
 };

@@ -18,9 +18,8 @@ public:
 
 	/**
 	* @brief 初期化する関数
-	* @return 初期化が上手くできていないとFALSE
 	*/
-	bool Initialize();
+	void Initialize();
 
 	/**
 	* @brief 解放する関数
